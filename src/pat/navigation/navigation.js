@@ -1,9 +1,9 @@
 import $ from "jquery";
 import Base from "../../core/base";
-import Parser from "../../core/parser";
-import logger from "../../core/logger";
+import { logging } from "patternslib-core";
+import { parser as Parser } from "patternslib-core";
 
-const log = logger.getLogger("navigation");
+const log = logging.getLogger("navigation");
 const parser = new Parser("navigation");
 
 parser.addArgument("item-wrapper", "li");
