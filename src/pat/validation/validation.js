@@ -120,7 +120,7 @@ define([
                        I still have to find it.
                        The following code removes the date validation constraint in case there 
                        is no date to validate for. */
-                    if ($ref.val() === "") {
+                    if (! $ref.val() || ! $(input).val()) {
                         constraints[name].date = false;
                     }
                 }

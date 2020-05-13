@@ -5,6 +5,7 @@
 Features
 ~~~~~~~~
 
+- pat-validation: Do not trigger on empty dates. Fixes: #711
 - Rework push message support for the STOMP message protocoll instead of backends instead of WAMP.
   We are using the RabbitMQ message broker for push support instead of crossbar.io.
 - Navigation:
